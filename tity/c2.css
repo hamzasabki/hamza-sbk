@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+    }
+    .conter{
+        width: 100%;
+        height: 100vh;
+        background-image:  url(cssd/bubble-g4275f871e_1920.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 0 8%;
+        position: relative;
+    } nav{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px 0;
+    }
+    .logo{
+        width: 120px;
+        cursor: pointer;
+    }
+    .icon{
+        width: 30px;
+        cursor: pointer;
+    }
+    nav ul{
+        flex: 1;
+        text-align: right;
+        padding: 30px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 30px;
+    }
+    nav ul li a{
+                color: #fff;
+                text-decoration: none;
+                position: relative;
+    }
+     nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+     }
+
+     nav ul li a:hover::after{
+        width: 50%;
+    }
+    body{
+    background: rgb(25, 156, 168);
+}
+.con{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.con .card{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+.con .card .content {
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.con .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.con .card .content h2
+{
+    position: absolute;
+    top: -65%;
+    right: 30px;
+    font-size: 8em;
+    color:  rgba(197, 15, 15, 0.5);
+    pointer-events: none;
+}
+.con .card .content h3
+{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+.con .card .content p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.con .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-align: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+.ppp{
+    visibility: hidden;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    min-height: 30vh;
+
+}
+nav h2{
+    display: flex;
+    color: transparent;
+    font-size: 25vw;
+}
+h2 span
+{
+    animation: animate 3s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+.clo{
+    margin: 0px;
+padding: 0px; 
+display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+
+}
+.copy {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.copy .box{
+    position: relative;
+    background: #fff;
+    padding: 20px 40px 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+.copy .box:nth-child(1){
+    background: linear-gradient(45deg,#036eb7, #64aeff);
+}
+.copy .box:nth-child(2){
+    background: linear-gradient(45deg,#086d35, #00ff72);
+}
+.copy .box:nth-child(3){
+    background: linear-gradient(45deg,#e91e63, #ed55ff);
+}
+.copy .box:nth-child(4){
+    background: linear-gradient(45deg,#f05a4f, #fc4030);
+}
+.copy .box h2{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    color: #fff;
+    z-index: 1;
+    opacity: 0.4;
+}
+.copy .box h3{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.copy .box p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #fff;
+}
+nav{
+    margin: 0 0;
+}
+nav :not(ul, .icon){
+    padding: 0 0;
+}
